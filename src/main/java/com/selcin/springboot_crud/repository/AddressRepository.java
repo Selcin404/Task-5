@@ -1,4 +1,9 @@
 package com.selcin.springboot_crud.repository;
 
-public class AddressRepository {
+import com.selcin.springboot_crud.model.Address;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface AddressRepository extends JpaRepository<Address, Long> {
 }
